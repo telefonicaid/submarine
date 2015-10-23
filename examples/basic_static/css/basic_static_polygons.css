@@ -1,0 +1,21 @@
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    html, body, #map {
+        height: 100%;
+    }
+
+    .map .polygons {
+      fill-opacity: .5;
+      stroke: #000;
+      stroke-width: 0.5px;
+      stroke-opacity: 0.3;
+      cursor: pointer;
+    }
+
+    .map .polygons:hover {
+        fill-opacity: 0.9;
+        stroke-opacity: 0.9;
+        stroke-width: 1.5px;
+    }

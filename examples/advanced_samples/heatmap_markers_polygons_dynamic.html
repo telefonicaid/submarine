@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+        <link rel="stylesheet" href="css/heatmap_markers_polygons_dynamic.css" />
+
+        <link  rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.css" />
+        <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+
+        <!--Leaflet awesome markers-->
+        <link rel="stylesheet" href="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css">
+
+        <title>Basic Static Map Example, only points</title>
+
+        <script src="bower_components/jquery/jquery.min.js" charset="utf-8"></script>
+        <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet/dist/leaflet.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet-providers/leaflet-providers.js" charset="utf-8"></script>
+        <script src="../../common/js/3rdparty/QuadTree.js" charset="utf-8"></script>
+        <script src="../../common/js/3rdparty/heatmap.js" charset="utf-8"></script>
+        <script src="../../common/js/3rdparty/heatmap-leaflet.js" charset="utf-8"></script>
+
+        <!--Leaflet awesome markers-->
+        <script src="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js" charset="utf-8"></script>
+
+        <!--Leaflet marker cluster-->
+        <script src="bower_components/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+
+        <script src="js/heatmap_markers_polygons_dynamic.js" charset="utf-8"></script>
+        <script src="../../lib/submarine.js" charset="utf-8"></script>
+
+    </head>
+
+    <body>
+            <div id="map" class="map"></div>
+
+            <script type="text/javascript">
+
+                self = {};
+
+                // Controller object
+                self.mapObj = submarine.controller.basicStatic("map","map",
+                    {
+                        'baseJUrl':"data/",
+                        'polFile': "bcn_renta.json",
+                        'dataFiles':
+                                    {
+                                        'cultura':'cultura.json',
+                                        'deportes': 'esports.json'
+                                    }
+                        ,
+                        'heatRadii':
+                                    {
+                                        'cultura': 30,
+                                        'deportes': 60
+                                    },
+                        'markerDefFile': 'marker_def.json',
+                        'transTime':1500,
+                        'debugLevel':3,
+                        'vizOptions':
+                        {
+                            'tileLayer': L.tileLayer.provider('Stamen.TonerLite'),
+                            'initLatLng': [41.40,2.15],
+                            'mapOptions':{
+                                                'zoom': 12,
+                                                'maxZoom': 16
+                            },
+                            'hideOnZoom': false
+                        }
+                    });
+            </script>
+    </body>
+</html>

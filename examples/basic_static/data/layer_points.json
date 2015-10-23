@@ -1,0 +1,6 @@
+{"type":"FeatureCollection","features":[
+{"type":"Feature","id":"point1","geometry":{"type":"Point","coordinates":[-73.34,45.01]},"properties":{"toolTipText": "Texto para este punto","radius":10000,"count":486}},
+{"type":"Feature","id":"point2","geometry":{"type":"Point","coordinates":[-74.4,43.01]},"properties":{"toolTipText": "Texto para este punto más gordo","radius":20000,"count":486}},
+{"type":"Feature","id":"point3","geometry":{"type":"Point","coordinates":[-122,37]},"properties":{"toolTipText": "Texto para este punto más gordo","radius":40000,"count":486}},
+{"type":"Feature","id":"point4","geometry":{"type":"Point","coordinates":[-3.6977791786193848,40.415750595628374]},"properties":{"toolTipText": "Texto para este punto más gordo","radius":40000,"count":486}}
+]}

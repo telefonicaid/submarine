@@ -1,0 +1,85 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+          "geometry": {"type": "Point", "coordinates": [-0.87112,41.670556]},
+          "type": "Feature",
+          "id": "1",
+          "properties": {
+              "name": "El Picarral"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-0.916396,41.66392]},
+          "type": "Feature",
+          "id": "2",
+          "properties": {
+              "name": "Roger de Flor"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-0.883974,41.648625]},
+          "type": "Feature",
+          "id": "3",
+          "properties": {
+              "name": "El Paraninfo"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-0.87052,41.647647]},
+          "type": "Feature",
+          "id": "4",
+          "properties": {
+              "name": "Miguel Servet"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-0.900153,41.655984]},
+          "type": "Feature",
+          "id": "5",
+          "properties": {
+              "name": "Luis Vives"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-0.900153,41.655984]},
+          "type": "Feature",
+          "id": "6",
+          "properties": {
+              "name": "Avenida de Navarra"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-0.86419,41.674611]},
+          "type": "Feature",
+          "id": "7",
+          "properties": {
+              "name": "Jaime Ferran"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-0.89363,41.635604]},
+          "type": "Feature",
+          "id": "8",
+          "properties": {
+              "name": "Renovales"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-0.863095,41.640608]},
+          "type": "Feature",
+          "id": "9",
+          "properties": {
+              "name": "Las Fuentes"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-0.887555,41.650846]},
+          "type": "Feature",
+          "id": "10",
+          "properties": {
+              "name": "Centro"
+          }
+        }
+    ]
+}

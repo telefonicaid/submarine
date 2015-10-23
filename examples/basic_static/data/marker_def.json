@@ -1,0 +1,20 @@
+{
+    "redMarker":
+    {
+    "icon": "book",
+    "markerColor": "red",
+    "prefix": "fa"
+    },
+    "blueMarker":
+    {
+    "icon": "bell",
+    "markerColor": "blue",
+    "prefix": "fa"
+    },
+    "default":
+    {
+    "icon": "bell",
+    "markerColor": "black",
+    "prefix": "fa"
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="stylesheet" href="css/basic_static.css" />
+        <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+
+        <title>Basic Static Map Example with all type of geometries</title>
+
+        <script src="bower_components/jquery/jquery.min.js" charset="utf-8"></script>
+        <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet/dist/leaflet.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet-providers/leaflet-providers.js" charset="utf-8"></script>
+
+        <script src="js/basic_static_all.js" charset="utf-8"></script>
+        <script src="../../lib/submarine.js" charset="utf-8"></script>
+
+    </head>
+
+    <body>
+
+        <div id="map" class="map"></div>
+
+        <script type="text/javascript">
+
+            self = {};
+            // Controller object
+            self.mapObj = submarine.controller.basicStatic("map","map",
+                {
+                    'baseJUrl':"data/",
+                    'dataFile': 'basic_static_all.json',
+                    'transTime':1500,
+                    'debugLevel':3,
+                    'vizOptions':
+                    {
+                        'tileLayer': L.tileLayer.provider('Stamen.Watercolor'),
+                        'initLatLng': [45.01,-73.34],
+                        'mapOptions':{
+                            'zoom': 18,
+                            'maxZoom': 5,
+                            'minZoom': 3
+                        },
+                        'hideOnZoom': false
+                    }
+                });
+
+        </script>
+    </body>
+</html>

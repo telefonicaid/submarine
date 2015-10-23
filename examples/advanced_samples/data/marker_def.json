@@ -1,0 +1,14 @@
+{
+    "book":
+    {
+    "icon": "book",
+    "markerColor": "red",
+    "prefix": "fa"
+    },
+    "default":
+    {
+    "icon": "trophy",
+    "markerColor": "red",
+    "prefix": "fa"
+    }
+}

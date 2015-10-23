@@ -1,0 +1,17 @@
+{
+  "name": "submarine_maps",
+  "author": "Analytics",
+  "version": "0.9.0",
+  "dependencies": {
+    "jquery": "~1.7.1",
+    "d3": "~3.5.6",
+    "leaflet": "~0.5",
+    "leaflet-providers": "~1.0.0",
+    "Leaflet.awesome-markers": "~2.0.1",
+    "font-awesome": "~4.0.3"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "leaflet": "~0.5"
+  }
+}

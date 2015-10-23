@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+        <link rel="stylesheet" href="css/interactive_tooltip_points.css" />
+
+        <title>Interactive Tooltip on Points Example</title>
+
+        <script src="bower_components/jquery/jquery.min.js" charset="utf-8"></script>
+        <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet/dist/leaflet.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet-providers/leaflet-providers.js" charset="utf-8"></script>
+
+        <script src="js/interactive_tooltip_points.js" charset="utf-8"></script>
+        <script src="../../lib/submarine.js" charset="utf-8"></script>
+
+    </head>
+
+    <body>
+
+            <div id="map" class="map"></div>
+
+            <script type="text/javascript">
+
+                self = {};
+
+                // Controller object
+                self.mapObj = submarine.controller.interactiveMap("map","map",
+                    {
+                        'baseJUrl':"data/",
+                        'dataFile': 'interactive_tooltip_points.json',
+                        'transTime':1500,
+                        'debugLevel':3,
+                        'vizOptions':
+                        {
+                            'tileLayer': L.tileLayer.provider('Stamen.TonerLite'),
+                            'initLatLng': [40.01,-98.34],
+                            'mapOptions':{
+                                                'zoom': 4
+                            },
+                            'hideOnZoom': false
+                        }
+                    });
+            </script>
+    </body>
+</html>

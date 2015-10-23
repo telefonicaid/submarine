@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+        <link rel="stylesheet" href="css/eco_contadores.css" />
+        <link rel="stylesheet" href="../../common/css/3rdparty/jquery.slider.min.css" />
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
+
+
+        <title>Ecocontadores/Datathon Sevilla</title>
+
+        <script src="bower_components/jquery/jquery.min.js" charset="utf-8"></script>
+        <script src="bower_components/moment/min/moment.min.js" charset="utf-8"></script>
+        <script src="../../common/js/3rdparty/jquery.slider.min.js" charset="utf-8"></script>
+        <script src="../../common/js/extras/generic_slider.js" charset="utf-8"></script>
+        <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet/dist/leaflet.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet-providers/leaflet-providers.js" charset="utf-8"></script>
+
+        <script src="js/eco_contadores_iconos.js" charset="utf-8"></script>
+        <script src="../../lib/submarine.js" charset="utf-8"></script>
+
+    </head>
+
+    <body>
+
+            <div id="map" class="map"></div>
+
+            <script type="text/javascript">
+
+                self = {};
+
+                // Controller object
+                self.mapObj = submarine.controller.basicDynamic("map","map",
+                    {
+                        'baseJUrl':"data/",
+                        'dataFile': 'eco_contadores_data.json',
+                        'geoFile': 'eco_contadores_geo.json',
+                        'weatherFile': 'meteo_data.json',
+                        'transTime': 100,
+                        'timerInterval': 100,
+                        'dateBegin': "20130101",
+                        'numDays': 31,
+                        'pathToImages': "../../common/css/img/",
+                        'debugLevel': 3,
+                        'vizOptions':
+                        {
+                            'tileLayer': L.tileLayer.provider('Stamen.TonerLite'),
+                            'initLatLng': [37.39,-5.982663],
+                            'mapOptions':{
+                                                'zoom': 13
+                            },
+                            'hideOnZoom': false
+                        }
+                    });
+            </script>
+    </body>
+</html>

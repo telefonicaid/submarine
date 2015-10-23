@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/interactive_select_polygons.css" />
+
+        <title>Interactive Selection of heatmap on Polygons example</title>
+
+        <script src="bower_components/jquery/jquery.min.js" charset="utf-8"></script>
+        <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet/dist/leaflet.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet-providers/leaflet-providers.js" charset="utf-8"></script>
+
+        <script src="js/interactive_select_polygons.js" charset="utf-8"></script>
+        <script src="../../lib/submarine.js" charset="utf-8"></script>
+
+    </head>
+
+    <body>
+            <div id="map" class="map"></div>
+            <script type="text/javascript">
+
+                self = {};
+
+                // Controller object
+                self.mapObj = submarine.controller.interactiveMap("map","map",
+                    {
+                        'baseJUrl':"data/",
+                        'geoFile': 'london_geo.json',
+                        'dataFilePollution': 'london_pollution.json',
+                        'dataFileCrime': 'london_crime.json',
+                        'transTime':1500,
+                        'debugLevel':3,
+                        'vizOptions':
+                        {
+                            'tileLayer': L.tileLayer.provider('Stamen.TonerLite'),
+                            'initLatLng': [51.521577048606794,-0.097288714744726154],
+                            'mapOptions':{
+                                 'zoom': 11
+                            },
+                            'hideOnZoom': false
+                        }
+                    });
+
+            </script>
+    </body>
+</html>

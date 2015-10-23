@@ -1,0 +1,85 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+          "geometry": {"type": "Point", "coordinates": [-5.982663,37.396483]},
+          "type": "Feature",
+          "id": "1",
+          "properties": {
+              "name": "Jardin del Valle"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-5.974516,37.405142]},
+          "type": "Feature",
+          "id": "2",
+          "properties": {
+              "name": "Avenida de Llanes"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-6.00195,37.410477]},
+          "type": "Feature",
+          "id": "3",
+          "properties": {
+              "name": "Camino de los Descubrimientos"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-6.003692,37.393175]},
+          "type": "Feature",
+          "id": "4",
+          "properties": {
+              "name": "Plaza de Armas"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-5.933502,37.407937]},
+          "type": "Feature",
+          "id": "5",
+          "properties": {
+              "name": "Palacio de Congresos"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-5.998483,37.379664]},
+          "type": "Feature",
+          "id": "6",
+          "properties": {
+              "name": "Plaza de Cuba"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-5.985921,37.379996]},
+          "type": "Feature",
+          "id": "7",
+          "properties": {
+              "name": "Avenida de Carlos V"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-5.986704,37.360266]},
+          "type": "Feature",
+          "id": "8",
+          "properties": {
+              "name": "Calle Reina Mercedes"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-5.968759,37.382127]},
+          "type": "Feature",
+          "id": "9",
+          "properties": {
+              "name": "Calle Eduardo Dato"
+          }
+        },
+        {
+          "geometry": {"type": "Point", "coordinates": [-5.974358,37.344232]},
+          "type": "Feature",
+          "id": "10",
+          "properties": {
+              "name": "Avenida de Jerez"
+          }
+        }
+    ]
+}

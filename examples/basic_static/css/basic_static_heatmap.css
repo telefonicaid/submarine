@@ -1,0 +1,34 @@
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    html, body, #map {
+        height: 100%;
+    }
+
+    .map .points
+    {
+        fill: #C00;
+        cursor: pointer;
+    }
+
+    .map .paths
+    {
+       stroke:black;
+       stroke-width: 1px;
+       fill: transparent;
+       cursor:pointer;
+    }
+
+    .map .polygons {
+      fill: #000;
+      fill-opacity: .2;
+      stroke: #fff;
+      stroke-width: 1px;
+      cursor: pointer;
+    }
+
+    .map .polygons:hover {
+      fill-opacity: 0.5;
+    }
+

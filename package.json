@@ -1,0 +1,27 @@
+{
+  "name": "submarine",
+  "description": "Submarine, interactive maps with D3 and Leaflet",
+  "version": "0.9.0",
+  "author": {
+    "name": "Analytics - Telefónica Investigación y Desarrollo, S.A.U",
+    "email": "analytics_dataviz@tid.es"
+  },
+  "contributors": [
+    {
+      "name": "Rafael Pellón",
+      "web": "http://twitter.com/pellonrafael"
+    },
+    {
+      "name": "Óscar Marín",
+      "web": "http://twitter.com/oscarmarinmiro"
+    },
+    {
+      "name": "Álvaro Sánchez",
+      "web": "http://twitter.com/alvarosata"
+    }
+  ],
+  "license": {
+    "type": "MIT License",
+    "url": "http://opensource.org/licenses/mit-license.html"
+  }
+}

@@ -1,0 +1,110 @@
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    html, body, #map {
+        height: 100%;
+    }
+
+    .map .points
+    {
+        fill: #C00;
+        cursor: pointer;
+    }
+
+    .map .paths
+    {
+       stroke:black;
+       stroke-width: 1px;
+       fill: transparent;
+       cursor:pointer;
+    }
+
+    .map .polygons {
+      fill: #000;
+      fill-opacity: .2;
+      stroke: #fff;
+      stroke-width: 1px;
+      cursor: pointer;
+    }
+
+    .map .polygons:hover {
+      fill-opacity: 0.5;
+    }
+
+    .tooltip
+    {
+        position: absolute;
+        width: 200px;
+        padding: 8px;
+        font: 15px Helvetica Neue;
+        background: #FFF;
+        border: solid 1px #aaa;
+        border-radius: 8px;
+        pointer-events: none;
+        z-order:1000;
+        text-align:center;
+    }
+
+    .optionsBox
+    {
+        z-index: 9999;
+        position: absolute;
+        right: 10px;
+        bottom: 30px;
+        background: white;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 5px;
+        width:400px;
+        font: 10px Titillium Web;
+    }
+
+    .optionsBox h4
+    {
+        margin: 0 0 5px;
+        font-size: 14px;
+        color: #777;
+    }
+
+
+    /*Slider*/
+
+    .layoutSlider
+    {
+        margin-top:20px;
+        margin-bottom:30px;
+    }
+
+    .play
+    {
+        cursor: pointer;
+    }
+
+    .optionsLegend
+    {
+        font-size:14px;
+        color: #000;
+        font-weight:600;
+    }
+
+
+
+    .infoTitle
+    {
+        background-color: #000;
+        color: #FFF;
+        font-size: 18px;
+        font-family: Titillium Web;
+        text-align: center;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .infoContent
+    {
+        padding: 5px 20px 20px 20px;
+    }
+
+
+

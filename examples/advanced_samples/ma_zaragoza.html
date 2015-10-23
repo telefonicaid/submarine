@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+        <link rel="stylesheet" href="css/ma_zaragoza.css" />
+        <link rel="stylesheet" href="../../common/css/3rdparty/jquery.slider.min.css" />
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
+
+        <title>Environment Datathon @ Zaragoza</title>
+
+        <script src="bower_components/jquery/jquery.min.js" charset="utf-8"></script>
+        <script src="bower_components/moment/min/moment.min.js" charset="utf-8"></script>
+        <script src="../../common/js/3rdparty/jquery.slider.min.js" charset="utf-8"></script>
+        <script src="../../common/js/extras/generic_slider.js" charset="utf-8"></script>
+        <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet/dist/leaflet.js" charset="utf-8"></script>
+        <script src="bower_components/leaflet-providers/leaflet-providers.js" charset="utf-8"></script>
+
+        <script src="js/ma_zaragoza.js" charset="utf-8"></script>
+        <script src="../../lib/submarine.js" charset="utf-8"></script>
+
+    </head>
+
+    <body>
+
+            <div id="map" class="map"></div>
+
+            <script type="text/javascript">
+
+                self = {};
+
+                // Controller object
+                self.mapObj = submarine.controller.basicDynamic("map","map",
+                    {
+                        'baseJUrl':"data/",
+                        'dataFile': 'ma_data.json',
+                        'geoFile': 'estaciones_ma_geo.json',
+                        'transTime': 1000,
+                        'timerInterval': 1000,
+                        'dateBegin': "20130101",
+                        'numDays': 31,
+                        'pathToImages': "../../common/css/img/",
+                        'debugLevel': 3,
+                        'notValueColor': "#000",
+                        'valueColor': "#C00",
+                        'sizeScales':
+                        {
+                          'SO2': d3.scale.sqrt().domain([0,12]).range([0,1]).clamp(true),
+                          'PM10': d3.scale.sqrt().domain([0,30]).range([0,1]).clamp(true),
+                          'NO2': d3.scale.sqrt().domain([0,50]).range([0,1]).clamp(true),
+                          'CO': d3.scale.sqrt().domain([0,1]).range([0,1]).clamp(true),
+                          'O3': d3.scale.sqrt().domain([0,60]).range([0,1]).clamp(true),
+                          'SH2': d3.scale.sqrt().domain([0,3]).range([0,1]).clamp(true)
+                        },
+                        'vizOptions':
+                        {
+                            'tileLayer': L.tileLayer.provider('Stamen.TonerLite'),
+                            'initLatLng': [41.650846,-0.887555],
+                            'mapOptions':{
+                                'zoom': 13
+                            },
+                            'hideOnZoom': false
+                        }
+                    });
+            </script>
+    </body>
+</html>
