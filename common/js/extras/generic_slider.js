@@ -21,7 +21,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-var submarine = submarine || {'version':0.9.0, 'controller':{}, 'viz': {} ,'extras': {}, 'comm': {}};
+var submarine = submarine || {'version':0.9, 'controller':{}, 'viz': {} ,'extras': {}, 'comm': {}};
 
 // Generic slider wrapping https://github.com/egorkhmelev/jslider
 // In the options object:

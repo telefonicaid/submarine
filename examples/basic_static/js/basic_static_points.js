@@ -1,4 +1,4 @@
-var submarine = submarine || {'version':0.9.0, 'controller':{}, 'viz': {} ,'extras': {} };
+var submarine = submarine || {'version':0.9, 'controller':{}, 'viz': {} ,'extras': {} };
 
 // Controller example for rendering a geoJSON into HTML5 id 'idName'.
 // 'className' is the CSS class of the 'idName'
